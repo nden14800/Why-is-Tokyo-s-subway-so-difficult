@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京の地下鉄はなぜ難しいの？</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f0f0;
+            --text-color: #333333;
+            --title-text-color: #bb86fc;
+            --card-bg-color: #ffffff;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                /* --title-text-color は #bb86fc のまま */
+                --card-bg-color: #1e1e1e;
+                --card-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg-color);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        h1, h2 {
+            color: var(--title-text-color);
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+            border-bottom: 2px solid var(--title-text-color);
+            padding-bottom: 0.3em;
+        }
+
+        p, li {
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+        
+        ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+        /* フェードインアニメーション */
+        .fade-in-element {
+            opacity: 0;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .fade-in-element.visible {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="fade-in-element">東京の地下鉄はなぜ難しいの？</h1>
+
+        <section>
+            <h2 class="fade-in-element">はじめに</h2>
+            <p class="fade-in-element">
+                東京の地下鉄は、世界でも有数の規模と複雑さを誇る交通網です。日々多くの人々の移動を支える一方で、特に初めて利用する人や観光客にとっては「迷路のようだ」と感じられることも少なくありません。なぜ東京の地下鉄はこれほどまでに難解なのでしょうか。その背景には、複数の要因が絡み合っています。
+            </p>
+        </section>
+
+        <section>
+            <h2 class="fade-in-element">1. 圧倒的な路線数と運営会社の多様性</h2>
+            <p class="fade-in-element">
+                東京の地下鉄が難解に感じられる大きな理由の一つは、その路線数の多さと、複数の運営会社が存在することです。
+            </p>
+            <ul class="fade-in-element">
+                <li class="fade-in-element"><strong>多数の路線と複雑な路線図:</strong> 東京には「東京メトロ」と「都営地下鉄」の2つの主要な地下鉄事業者があり、合わせて13もの路線が都内を網の目のように走っています。これに加えて、これらの地下鉄路線はJR線や私鉄各線と相互直通運転を行っている場合も多く、路線図は色分けされてはいるものの、非常に複雑に見えます。特に、普段利用しない人にとっては、目的地までの最適な経路を見つけ出すのが困難な場合があります。
+                </li>
+                <li class="fade-in-element"><strong>異なる運営会社と料金体系:</strong> 東京メトロと都営地下鉄は別々の事業者であるため、運賃体系も異なります。乗り換えが必要な場合、事業者間をまたぐと運賃が割高になったり、一度改札を出て再度入り直す必要が生じたりすることがあります。一応、乗り換え時間を短縮するための連絡通路や、運賃面での割引が適用される乗り換え駅も設定されていますが、初見では分かりにくいこともあります。
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="fade-in-element">2. 巨大で複雑な駅の構造</h2>
+            <p class="fade-in-element">
+                主要な駅、特に複数の路線が乗り入れるターミナル駅は、その構造自体が非常に複雑で、迷いやすい要因となっています。
+            </p>
+            <ul class="fade-in-element">
+                <li class="fade-in-element"><strong>広大な駅構内と多数の出口:</strong> 新宿駅や大手町駅、渋谷駅といった主要な乗り換え駅は、地下深くまで何層にもわたってホームや通路が広がっており、まるで巨大な地下都市のようです。出口も非常に多く、目的地に最も近い出口を見つけるだけでも一苦労です。
+                </li>
+                <li class="fade-in-element"><strong>長い乗り換え距離と分かりにくい案内:</strong> 路線によっては、乗り換えに非常に長い距離を歩かされることがあります。例えば、大手町駅では路線の組み合わせによって乗り換え時間が大きく変わります。案内表示は各所に設置されていますが、情報量が多すぎたり、逆に必要な情報が見つけにくかったりすることもあります。特に外国人観光客にとっては、言語の壁も加わり、さらに難易度が上がります。
+                </li>
+                <li class="fade-in-element"><strong>歴史的経緯による複雑化:</strong> 東京の地下鉄は長い年月をかけて段階的に拡張されてきたため、後から新しい路線が追加される際に、既存の路線や地下構造物との兼ね合いで、複雑な接続や配置にならざるを得なかったという歴史的経緯もあります。
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="fade-in-element">3. 地形と都市構造の影響</h2>
+            <p class="fade-in-element">
+                東京の地形や都市の成り立ちも、地下鉄の複雑さに関係しています。
+            </p>
+            <ul class="fade-in-element">
+                <li class="fade-in-element"><strong>起伏のある地形:</strong> 東京は坂が多い都市であり、地下鉄といえども完全にフラットな地下空間を走っているわけではありません。場所によっては、地下を走っていた路線が地上に出たり、駅のホームが地下の非常に深い場所に位置したりすることもあります（例：都営大江戸線）。これにより、駅の構造がより立体的で複雑になる一因となっています。
+                </li>
+                <li class="fade-in-element"><strong>道路網との関連:</strong> 地下鉄は基本的に主要な道路の下に建設されることが多いですが、東京の道路網は必ずしも碁盤の目状に整備されているわけではありません。特に都心部では皇居を中心とした放射状と環状の道路が多く、それに沿って地下鉄が建設された結果、路線図が曲線的で複雑に見えるという側面もあります。
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="fade-in-element">まとめ</h2>
+            <p class="fade-in-element">
+                東京の地下鉄が難しいと感じられるのは、路線数の多さ、複数の運営会社、巨大で複雑な駅構造、そして東京特有の地形や都市構造といった要因が複合的に絡み合っているためです。しかし、この複雑な地下鉄網も、慣れてしまえば非常に便利な交通手段であり、都内のあらゆる場所へのアクセスを可能にしています。近年では、乗り換え案内のアプリや多言語対応の表示なども充実してきており、以前に比べれば利用者にとって分かりやすくなるような工夫も進んでいます。とはいえ、初めて訪れる人にとっては依然として挑戦的な存在であることに変わりはなく、事前の情報収集や時間に余裕を持った行動が、スムーズな移動の鍵となるでしょう。
+            </p>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in-element');
+            
+            let delay = 0;
+            fadeElements.forEach(el => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, delay);
+                delay += 150; // 0.15秒ごとに次の要素を表示 (この値で速度調整)
+            });
+        });
+    </script>
+
+</body>
+</html>
